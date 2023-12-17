@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 7fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+.menu {
+  grid-row: 1 / 3;
+  background-color: rgb(143, 71, 80);
+  color: white;
+  font-weight: 700;
+}
+
+.menu > .title {
+  margin-bottom: 5vh;
+  margin-top: 1vh;
+}
+
+.menu > .title > a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.menu > .title > a > img {
+  width: 4vw;
+  height: 4vh;
+}
+
+.menu > div > div > a > img {
+  width: 2vw;
+  height: 2vh;
+}
+
+.menu > div > div > a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.menu > .set1,
+.menu > .set2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  margin: 2vh 3.5vw 0 1vw
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 5fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.header > div > label > img {
+  width: 50%;
+  height: 25%;
+  position: relative;
+  left: 40%;
+}
+
+.header > .searchBar {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  align-items: center;
+  margin-left: 3vw;
+}
+
+.header > .searchBar > input {
+  border-radius: 15px;
+  background-color: rgb(175, 172, 172);
+  width: 90%;
+  height: 25%;
+  padding-left: 1vw;
+}
+
+
+
+
+
