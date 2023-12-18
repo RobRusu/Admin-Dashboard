@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .container {
@@ -59,9 +59,12 @@
 }
 
 .header {
+  grid-column: 2 / 3;
   display: grid;
   grid-template-columns: 5fr 1fr 2fr;
   grid-template-rows: 1fr 1fr;
+  background-color: white;
+  box-shadow: 0 5px 20px rgb(119, 119, 119);
 }
 
 .header > div > label > img {
@@ -76,17 +79,86 @@
   grid-template-columns: 1fr 9fr;
   align-items: center;
   margin-left: 3vw;
+  gap: 5px;
 }
 
 .header > .searchBar > input {
   border-radius: 15px;
   background-color: rgb(175, 172, 172);
-  width: 90%;
+  width: 100%;
   height: 25%;
   padding-left: 1vw;
 }
 
+.header > .notifications {
+  display: grid;
+  justify-items: end;
+  align-items: center;
+}
 
+.header > .notifications > img {
+  width: 20%;
+}
 
+.header > .profile {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 20px;
+  margin-left: 1vw;
+}
 
+.header > .profile > img {
+  width: 100%;
+  border-radius: 60%;
+}
+
+.header > .status {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 1fr;
+  margin-left: 3vw;
+}
+
+.header > .status > img {
+  grid-row: 1 / 3;
+  width: 100%;
+}
+
+.header > .status > p {
+  display: flex;
+  align-items: end;
+  font-weight: bold;
+}
+
+.header > .new {
+ position: relative;
+ display: grid;
+ grid-template-columns: 1fr;
+ align-items: center;
+}
+
+.header > .new > button {
+  position: absolute;
+  right: 0;
+}
+
+.header > .new > button,
+.header > .uploadAndShare > button {
+  background-color: #1e40af;
+  padding: 0.5rem 2rem;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+
+.header > .uploadAndShare {
+  margin-left: 1vw;
+  margin-right: 2vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1vw;
+}
 
